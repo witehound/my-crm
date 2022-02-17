@@ -1,0 +1,107 @@
+.login-form{
+    background-color: white;
+    height: 55%;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.3rem;
+    box-shadow: 0px 0px 15px -5px black;
+}
+
+.reset-form{
+    background-color: white;
+    height: 42%;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.3rem;
+    box-shadow: 0px 0px 15px -5px black;
+}
+
+.login-form-wrap{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 96%;
+    width: 80%;
+}
+
+hr{
+    width: 100%;
+    border: 1px solid;
+    color: rgb(31, 31, 31);
+}
+
+header{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 250;
+    font-size: 40px;
+    color: tomato;
+}
+
+.reset-form-header{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 250;
+    font-size: 25px;
+    color: tomato;
+}
+.space{
+    flex: 0.3;
+}
+
+form{
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.from-body{
+    flex: 2;
+}
+
+.login-form-email{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.login-form-pass{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.forgot-password{
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+input{
+    height: 25px;
+    outline: none;
+}
+
+label{
+    font-size: 15px;
+    height: 25px;
+}
+
+button{
+    background-color: tomato;
+    color: white;
+    outline: none;
+    border: none;
+    height: 40px;
+    width: 60px;
+    border-radius: 0.5rem;
+}
