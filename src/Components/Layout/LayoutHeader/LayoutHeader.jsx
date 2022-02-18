@@ -1,13 +1,19 @@
 import React from 'react'
 import "./LayoutHeader.css"
-import {Navbar,Nav,Container,NavDropdown} from "react-bootstrap"
+import 'bootstrap/dist/css/bootstrap.css'
+import {Navbar,Nav} from "react-bootstrap"
 
 function LayoutHeader() {
   return (
-    <Navbar heightcollapseOnSelect fixed='top' expand='sm' bg='dark' variant='dark'>
-      <Navbar.Brand>
-        CRM
-      </Navbar.Brand>
+    <Navbar heightcollapseOnSelect expand='md' id='layout-header-nav' variant='dark'>
+      <div className='layout-header-nav-brand'>
+        <h6 className='layout-header-nav-brand-6'>
+         CRM
+        </h6>
+      </div>
+      <div className="space">
+         
+      </div>
       <Navbar.Toggle aria-controls='responsive-navbar-nav'/>
       <Navbar.Collapse id='responsive-navbar-nav'>
         <Nav>

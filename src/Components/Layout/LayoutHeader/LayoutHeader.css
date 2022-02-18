@@ -1,0 +1,38 @@
+#layout-header-nav{
+    background-color: tomato;
+    padding-left: 12%;
+    padding-right: 12%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.layout-header-nav-brand{
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.layout-header-nav-brand-6{
+    color: tomato;
+    background: white;
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.space{
+    flex: 3;
+}
+
+.navbar-nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
