@@ -1,0 +1,18 @@
+.app-layout{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.app-layout-header{
+    height: 61px;
+}
+
+.app-layout-main{
+    flex: 1;
+}
+
+.app-layout-footer{
+    height: 50px;
+    width: 100vw;
+}

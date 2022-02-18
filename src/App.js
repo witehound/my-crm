@@ -6,7 +6,9 @@ function App() {
   return (
     <div className="App">
      {/*<EntryPage />*/}
-     <AppLayout />
+     <AppLayout>
+       //Dashboard
+     </AppLayout>
     </div>
   );
 }
