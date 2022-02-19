@@ -5,7 +5,7 @@ import {Navbar,Nav} from "react-bootstrap"
 
 function LayoutHeader() {
   return (
-    <Navbar heightcollapseOnSelect expand='md' id='layout-header-nav' variant='dark'>
+    <Navbar collapseOnSelect expand='md' id='layout-header-nav' variant='dark'>
       <div className='layout-header-nav-brand'>
         <h6 className='layout-header-nav-brand-6'>
          CRM

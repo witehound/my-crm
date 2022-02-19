@@ -1,0 +1,36 @@
+.dashboard-div{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.dashboard-div-add-ticket{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+.dashboard-div-add-ticket-button{
+    height: 65px;
+    width: 250px;
+    color: white;
+    background-color: tomato;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.3rem;
+}
+
+.dashboard-div-add-ticket-data-area{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+h6{
+    font-weight: 100;
+}

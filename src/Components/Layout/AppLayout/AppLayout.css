@@ -4,6 +4,10 @@
     flex-direction: column;
 }
 
+.app-layout-main{
+   
+}
+
 .app-layout-header{
     height: 61px;
 }
