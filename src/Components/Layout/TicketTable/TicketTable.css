@@ -1,11 +1,31 @@
 .ticket-table-div{
-    flex: 1.5;
-    padding-left: 15%;
-    padding-right: 15%;
+    height: 360px;
     font-weight: 100;
+    overflow: auto;
+    position: relative;
 }
 
 h5{
     line-height: 50px;
     font-weight: 100;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-color: white;
+}
+
+table{
+    overflow: scroll;
+}
+
+.ticket-table-div-table-wrap{
+    overflow: scroll;
+}
+
+.ticket-table-div-table-wrap-none{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-span: all;
 }

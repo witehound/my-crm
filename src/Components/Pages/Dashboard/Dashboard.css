@@ -8,12 +8,12 @@
     flex: 1;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
     flex-direction: column;
 }
 
 .dashboard-div-add-ticket-button{
-    height: 65px;
+    height: 45px;
     width: 250px;
     color: white;
     background-color: tomato;

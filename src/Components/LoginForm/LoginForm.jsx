@@ -10,22 +10,26 @@ function LoginForm({handleOnChange, email, password, handleOnSubmit, formSwitche
              Client Login
          </header>
          <hr />
-         <div className="space">
+         <div className="space-er">
             
          </div>
          <form autoComplete='off'>
            <div className="login-form-email">
              <label>Email :</label>
              <input type="email" name='email' value={email}placeholder='Input Email' required 
-             onChange={handleOnChange}/>
+             onChange={handleOnChange}
+               className="login-form-input"
+             />
            </div>
            <div className="login-form-pass">
              <label>Email :</label>
              <input type="password" name='password' value={password}placeholder='Input password' required 
-             onChange={handleOnChange}/>
+             onChange={handleOnChange}
+             className="login-form-input"
+             />
            </div>
            <div className="login-from-button">
-             <button type='submit' onClick={handleOnSubmit}>Submit</button>
+             <button type='submit' onClick={handleOnSubmit} className="login-from-button-btn">Submit</button>
            </div>
          </form>
          <div className="forgot-password">

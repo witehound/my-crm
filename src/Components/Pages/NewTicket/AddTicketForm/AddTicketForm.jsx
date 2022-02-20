@@ -14,6 +14,7 @@ function AddTicketForm({handleOnChange,handelOnSubmitTwo,frmData }) {
           placeholder="SSL Certification issue"
           required
           onChange={handleOnChange}
+          className='add-ticket-form-div-input'
         />
       </div>
       <div className="add-ticket-form-div-issue">
@@ -25,6 +26,7 @@ function AddTicketForm({handleOnChange,handelOnSubmitTwo,frmData }) {
           placeholder=""
           required
           onChange={handleOnChange}
+          className='add-ticket-form-div-input'
         />
       </div>
       <div className="add-ticket-form-div-details">
@@ -38,7 +40,8 @@ function AddTicketForm({handleOnChange,handelOnSubmitTwo,frmData }) {
         </textarea>
       </div>
       <div className="add-ticket-form-div-button">
-         <button onClick={handelOnSubmitTwo}>Add New Ticket</button>
+         <button onClick={handelOnSubmitTwo}
+         className='add-ticket-form-div-btn'>Add New Ticket</button>
       </div>
       <div className="hr">
         <hr />

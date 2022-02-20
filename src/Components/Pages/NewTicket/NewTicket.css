@@ -5,16 +5,14 @@
 }
 
 .new-ticket-div-add{
-    padding-left: 13%;
-    padding-right: 13%;
     display: flex;
     flex: 1;
     flex-direction: column;
 }
 
 .new-ticket-div-add-main{
-    padding-left: 7%;
-    padding-right: 7%;
+    padding-left: 3%;
+    padding-right: 3%;
     display: flex;
     flex: 1;
     flex-direction: column;
@@ -24,4 +22,10 @@
 
 h5{
     font-weight: 200;
+}
+
+@media only screen and (max-width:660px){
+    .new-ticket-div-add-main{
+        padding: 0px;
+    }
 }

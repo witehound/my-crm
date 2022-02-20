@@ -10,17 +10,20 @@ function ForgotPassword({handleOnChange, email, handleOnResetSubmit, formSwitche
              Forgot Password
          </header>
          <hr />
-         <div className="space">
+         <div className="space-er">
             
          </div>
          <form className='from-body' autoComplete='off'>
            <div className="login-form-email">
              <label>Email :</label>
              <input type="email" name='email' value={email}placeholder='Input Email' required 
-             onChange={handleOnChange}/>
+             onChange={handleOnChange}
+             className="login-form-input"
+             />
            </div>
            <div className="login-from-button">
-             <button type='submit' onClick={handleOnResetSubmit}>Submit</button>
+             <button type='submit' onClick={handleOnResetSubmit}
+             className="login-from-button-btn">Submit</button>
            </div>
          </form>
          <div className="forgot-password">

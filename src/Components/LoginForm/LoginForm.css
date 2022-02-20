@@ -53,7 +53,7 @@ header{
     font-size: 25px;
     color: tomato;
 }
-.space{
+.space-er{
     flex: 0.3;
 }
 
@@ -86,9 +86,10 @@ form{
     align-items: center;
 }
 
-input{
+.login-form-input{
     height: 25px;
     outline: none;
+    width: 100%;
 }
 
 label{
@@ -96,7 +97,7 @@ label{
     height: 25px;
 }
 
-button{
+.login-from-button-btn{
     background-color: tomato;
     color: white;
     outline: none;

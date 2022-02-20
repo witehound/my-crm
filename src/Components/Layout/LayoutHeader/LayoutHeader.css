@@ -4,7 +4,7 @@
     padding-right: 12%;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     color: white;
 }
 
@@ -35,4 +35,9 @@
     width: 100%;
     display: flex;
     justify-content: space-around;
+}
+
+.navbar-toggler{
+    height: 50px;
+    width: 100px;
 }

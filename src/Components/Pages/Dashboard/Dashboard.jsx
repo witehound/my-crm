@@ -3,6 +3,7 @@ import TicketTable from '../../Layout/TicketTable/TicketTable'
 import "./Dashboard.css"
 import tickets from "../../../assets/data/dummy-tickets.json"
 import BreadCrumbPage from "../../Layout/BreadCrumb/BreadCrumb"
+import ticketsData from "../../../../src/assets/data/dummy-tickets.json"
 
 function Dashboard() {
   return (
@@ -23,6 +24,7 @@ function Dashboard() {
      </div>
      <TicketTable 
        tickets={tickets}
+       newTicketState="Recently Added Tickets"
      />
     </div>
   )

@@ -5,7 +5,10 @@
 }
 
 .app-layout-main{
-   
+   padding-left: 15%;
+   padding-right: 15%;
+   padding-top: 10px;
+   padding-bottom: 10px;
 }
 
 .app-layout-header{

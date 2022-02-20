@@ -1,15 +1,16 @@
 import React from 'react'
 import "./TicketTable.css"
 import { Table } from "react-bootstrap"
+import PropTypes from "prop-types"
 
-function TicketTable({tickets}) {
-  console.log(tickets)
+function TicketTable({tickets,newTicketState}) {
   return (
     <div className='ticket-table-div'>
     <h5>
-      Recently Add Tickets
+      {newTicketState}
     </h5>
-     <Table striped variant='light' striped bordered hover>
+    <div className="ticket-table-div-table-wrap">
+    <Table striped variant='light' striped bordered hover>
        <thead>
          <tr>
            <th>#</th>
@@ -22,22 +23,27 @@ function TicketTable({tickets}) {
        {tickets.length ? (
          tickets.map((row) => (
           <tr key={row.id}>
-           <td>1</td>
-           <td>ssl issue</td>
-           <td>Client Response</td>
-           <td>2020-10-12</td>
+           <td>{row.id}</td>
+           <td>{row.subject}</td>
+           <td>{row.status}</td>
+           <td>{row.addedAt}</td>
          </tr> 
          ))
        ) :
-       <tr colSpan="4" className='text-center'> 
-         <td>No tickets to display</td>
+       <tr aria-colspan="4" className='text-center'> 
+         <td colSpan="4">No tickets to display</td>
        </tr>
        }
-         
        </tbody>
      </Table>
+    </div>
     </div>
   )
 }
 
 export default TicketTable
+
+TicketTable.propTypes = {
+  tickets : PropTypes.array.isRequired,
+  newTicketState : PropTypes.string.isRequired
+}
