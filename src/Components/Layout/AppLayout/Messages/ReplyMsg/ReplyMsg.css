@@ -3,17 +3,21 @@
 }
 
 .messages-div-send-message-label{
-    margin-top: 25px;
+    margin-top: 5px;
+    font-weight: 300;
 }
 
 .messages-div-send-message-textarea{
     height: 200px;
+    padding: 5px;
+    font-size: 15px;
+    font-weight: 100;
 }
 
 .messages-div-send-message-reply{
     width: 100%;
     display: flex;
-    margin-top: 20px;
+    margin-top: 10px;
     justify-content: flex-end;
 }
 

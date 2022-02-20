@@ -2,8 +2,10 @@ import React from 'react'
 import "./Tickets.css"
 import BreadCrumbPage from "../../Layout/BreadCrumb/BreadCrumb"
 import Messages from '../../Layout/AppLayout/Messages/Messages'
+import ticketsData from "../../../assets/data/dummy-tickets.json"
 
 function Tickets() {
+  const ticket = ticketsData[0]
   return (
     <div className='tickets-div-contain'>
      <BreadCrumbPage  page="About Ticket"/>
@@ -30,7 +32,9 @@ function Tickets() {
        </div>
      </div>
      <div className="tickets-div-messages">
-       <Messages />
+       <Messages 
+         ticket={ticket.history}
+       />
      </div>
     </div>
   )
