@@ -4,6 +4,8 @@ import AppLayout from './Components/Layout/AppLayout/AppLayout';
 import Dashboard from "./Components/Pages/Dashboard/Dashboard"
 import NewTicket from './Components/Pages/NewTicket/NewTicket';
 import TicketListing from "./Components/Pages/TicketListing/TicketListing"
+import Tickets from './Components/Pages/Tickets/Tickets';
+
 
 function App() {
   return (
@@ -12,7 +14,8 @@ function App() {
      <AppLayout>
        {/* <Dashboard />*/}
        {/*<NewTicket />*/}
-       <TicketListing />
+       {/*<TicketListing />*/}
+       <Tickets />
      </AppLayout>
     </div>
   );

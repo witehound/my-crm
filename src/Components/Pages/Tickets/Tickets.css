@@ -1,0 +1,88 @@
+.tickets-div-contain::-webkit-scrollbar {
+    display: none; /* for Chrome, Safari, and Opera */
+}
+
+.tickets-div-contain{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    -ms-overflow-style: none; /* for Internet Explorer, Edge */
+    scrollbar-width: none; /* for Firefox */
+    overflow-y: scroll; 
+}
+
+
+.tickets-div-status{
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+}
+
+.tickets-div-status-div{
+    display: flex;
+    flex-direction: column;
+    flex: 2;
+    
+}
+
+.tickets-div-status-div-wrap{
+    display: flex;
+    align-items: center;
+    height: 45px;
+}
+
+.tickets-div-status-div-wrap-label{
+    font-size: 18px;
+    height: 14px;
+    display: flex;
+    align-items: center;
+    flex: 1;
+    height: 100%;
+}
+
+.tickets-div-status-div-wrap-h5{
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    padding: 0px;
+    margin: 0px;
+    flex: 1;
+    height: 20px;
+}
+
+.tickets-div-messages{
+    flex: 7;
+}
+
+.tickets-div-status-div-wrap-space{
+    flex: 1;
+}
+
+.tickets-div-messages{
+    flex: 8;
+}
+
+.tickets-div-status-close-button-h5{
+    background-color: tomato;
+    color: white;
+    width: 150px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.3rem;
+}
+
+
+
+@media only screen and (max-width:660px){
+    .tickets-div-status-div-wrap-label{
+        font-size: 14px;
+    }
+    .tickets-div-status-div-wrap-h5{
+        font-size: 12px;
+    }
+    .tickets-div-status{
+        height: 80px;
+    }
+}
