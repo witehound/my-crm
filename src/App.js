@@ -2,6 +2,7 @@ import './App.css';
 import EntryPage from '../src/Components/EntryPage/EntryPage'
 import NewTicket from './Components/Pages/NewTicket/NewTicket';
 import TicketListing from "./Components/Pages/TicketListing/TicketListing"
+<<<<<<< HEAD
 import Tickets from './Components/Pages/Tickets/Tickets';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Dashboard from "../src/Components/Pages/Dashboard/Dashboard"
@@ -20,6 +21,19 @@ function App() {
       </Routes>
   </Router>
   </div>
+=======
+
+function App() {
+  return (
+    <div className="App">
+     {/*<EntryPage />*/}
+     <AppLayout>
+       {/* <Dashboard />*/}
+       {/*<NewTicket />*/}
+       <TicketListing />
+     </AppLayout>
+    </div>
+>>>>>>> parent of 2706d24 (message page for client and operator)
   );
 }
 

@@ -1,15 +1,7 @@
-.app-layout::-webkit-scrollbar{
-    display: none;
-}
-
 .app-layout{
     height: 100vh;
     display: flex;
     flex-direction: column;
-    -ms-overflow-style: none; /* for Internet Explorer, Edge */
-    scrollbar-width: none; /* for Firefox */
-    overflow-y: scroll; 
-    
 }
 
 .app-layout-main{
@@ -17,7 +9,6 @@
    padding-right: 15%;
    padding-top: 10px;
    padding-bottom: 10px;
-   height: 100%;
 }
 
 .app-layout-header{
