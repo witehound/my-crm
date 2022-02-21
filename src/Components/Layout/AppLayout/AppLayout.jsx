@@ -1,4 +1,4 @@
-import React, { Children } from 'react'
+import React from 'react'
 import './AppLayout.css'
 import LayoutFooter from '../LayoutFooter/LayoutFooter'
 import LayoutHeader from '../LayoutHeader/LayoutHeader'

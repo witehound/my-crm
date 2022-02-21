@@ -3,7 +3,24 @@
         "id": 1,
         "subject": "subject one ",
         "status": "Client respond pending",
-        "addedAt": "2022-01-30"
+        "addedAt": "2022-01-30",
+        "history": [
+            {
+                "date": "2020-10-10",
+                "message": "hey problem",
+                "messageBy": "client"
+            },
+            {
+                "date": "2020-10-10",
+                "message": "hey problem",
+                "messageBy": "operator"
+            },
+            {
+                "date": "2020-10-10",
+                "message": "hey problem",
+                "messageBy": "client"
+            }
+        ]
     },
     {
         "id": 2,
