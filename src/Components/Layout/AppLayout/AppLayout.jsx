@@ -4,14 +4,14 @@ import LayoutFooter from '../LayoutFooter/LayoutFooter'
 import LayoutHeader from '../LayoutHeader/LayoutHeader'
 
 
-function AppLayout({children}) {
+function AppLayout({Children}) {
   return (
     <div className='app-layout'>
     <div className="app-layout-header">
       <LayoutHeader/>
     </div>
      <div className="app-layout-main">
-       {children}
+       {Children}
      </div>
      <footer className="app-layout-footer">
        <LayoutFooter />

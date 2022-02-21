@@ -2,6 +2,7 @@ import React from 'react'
 import "./LayoutHeader.css"
 import 'bootstrap/dist/css/bootstrap.css'
 import {Navbar,Nav} from "react-bootstrap"
+import {Link} from "react-router-dom"
 
 function LayoutHeader() {
   return (
@@ -17,9 +18,9 @@ function LayoutHeader() {
       <Navbar.Toggle aria-controls='responsive-navbar-nav'/>
       <Navbar.Collapse id='responsive-navbar-nav'>
         <Nav>
-          <Nav.Link href='/dashboard'>Dashboard</Nav.Link>
-          <Nav.Link href='/dashboard'>Tickets</Nav.Link>
-          <Nav.Link href='/dashboard'>Logout</Nav.Link>
+          <Link href='/dashboard'>Dashboard</Link>
+          <Link href='/tickets'>Tickets</Link>
+          <Link href='/'>Logout</Link>
         </Nav>
       </Navbar.Collapse>
     </Navbar>
