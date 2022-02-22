@@ -21,7 +21,7 @@ function App() {
       <Route path='/dashboard' element={<PrivateRoute isAuth={isAuth}><AppLayout><Dashboard/></AppLayout></PrivateRoute>}/>
        <Route path='/newticket' element={<PrivateRoute isAuth={isAuth}><AppLayout><NewTicket/></AppLayout></PrivateRoute>}/>
        <Route path='/ticketlisting' element={<PrivateRoute isAuth={isAuth}isAuth={isAuth}><AppLayout><TicketListing/></AppLayout></PrivateRoute>}/>
-       <Route path='/tickets' element={<PrivateRoute isAuth={isAuth}><AppLayout><Tickets/></AppLayout></PrivateRoute>}/>
+       <Route path='/tickets/:tid' element={<PrivateRoute isAuth={isAuth}><AppLayout><Tickets/></AppLayout></PrivateRoute>}/>
      </Routes>
      </Router>
     </div>

@@ -106,3 +106,8 @@ label{
     width: 60px;
     border-radius: 0.5rem;
 }
+
+.login-from-button-btn:hover{
+    cursor: pointer;
+    background-color: rgb(247, 83, 54);
+}

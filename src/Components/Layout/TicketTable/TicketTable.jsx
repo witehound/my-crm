@@ -2,6 +2,7 @@ import React from 'react'
 import "./TicketTable.css"
 import { Table } from "react-bootstrap"
 import PropTypes from "prop-types"
+import {Link} from "react-router-dom"
 
 function TicketTable({tickets,newTicketState}) {
   return (
@@ -24,7 +25,11 @@ function TicketTable({tickets,newTicketState}) {
          tickets.map((row) => (
           <tr key={row.id}>
            <td>{row.id}</td>
-           <td>{row.subject}</td>
+           <td>
+           <Link to={`/tickets/${row.id}`}>
+           {row.subject}
+           </Link>
+           </td>
            <td>{row.status}</td>
            <td>{row.addedAt}</td>
          </tr> 
