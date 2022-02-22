@@ -11,7 +11,7 @@ function TicketTable({tickets,newTicketState}) {
       {newTicketState}
     </h5>
     <div className="ticket-table-div-table-wrap">
-    <Table striped variant='light' striped bordered hover>
+    <Table striped variant='light' bordered hover>
        <thead>
          <tr>
            <th>#</th>
@@ -25,7 +25,7 @@ function TicketTable({tickets,newTicketState}) {
          tickets.map((row) => (
           <tr key={row.id}>
            <td>{row.id}</td>
-           <td>
+           <td >
            <Link to={`/tickets/${row.id}`}>
            {row.subject}
            </Link>

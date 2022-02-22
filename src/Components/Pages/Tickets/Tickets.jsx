@@ -7,16 +7,20 @@ import {useParams} from "react-router-dom"
 
 
 function Tickets() {
-  const {tID}  = useParams()
+ const { tId }  = useParams()
  const [ticket, setTicket] = useState("")
+ 
+ const getId = () =>{
+   for (let index = 0; index < ticketsData.length; index++){
+     if(tId == ticketsData[index].id){
+       setTicket(ticketsData[index])
+     }
+   }
+ }
 
  useEffect(()=>
- {for(let i = 0 ;i < ticketsData; i++){
-     if(ticketsData[i].id === tID){
-       setTicket(ticketsData[i])
-       continue
-     }
-   }},[tID])
+ { getId()},[tId])
+   
 
   return (
     <div className='tickets-div-contain'>
@@ -25,15 +29,15 @@ function Tickets() {
        <div className="tickets-div-status-div">
           <div className="tickets-div-status-div-wrap">
             <label className='tickets-div-status-div-wrap-label'>Subject :</label>
-            <h5 className='tickets-div-status-div-wrap-h5'>Issues with ssl certificate</h5>
+            <h5 className='tickets-div-status-div-wrap-h5'>{ticket.subject}</h5>
           </div>
           <div className="tickets-div-status-div-wrap">
             <label className='tickets-div-status-div-wrap-label'>Date Opened :</label>
-            <h5 className='tickets-div-status-div-wrap-h5'>2020-20-02</h5>
+            <h5 className='tickets-div-status-div-wrap-h5'>{ticket.addedAt}</h5>
           </div>
           <div className="tickets-div-status-div-wrap">
             <label className='tickets-div-status-div-wrap-label'>Status :</label>
-            <h5 className='tickets-div-status-div-wrap-h5'>Pending operators response</h5>
+            <h5 className='tickets-div-status-div-wrap-h5'>{ticket.status}</h5>
           </div>
        </div>
        <div className="tickets-div-status-div-wrap-space">
@@ -45,7 +49,7 @@ function Tickets() {
      </div>
      <div className="tickets-div-messages">
          <Messages 
-         ticket={ticketsData.history}
+         ticket={ticket.history}
        />
      </div>
     </div>

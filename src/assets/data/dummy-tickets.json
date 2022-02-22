@@ -26,7 +26,24 @@
         "id": 2,
         "subject": "subject two",
         "status": "Client respond pending",
-        "addedAt": "2022-01-30"
+        "addedAt": "2022-01-30",
+        "history": [
+            {
+                "date": "2020-10-10",
+                "message": "hey number two",
+                "messageBy": "client"
+            },
+            {
+                "date": "2020-10-10",
+                "message": "hey problem number 2",
+                "messageBy": "operator"
+            },
+            {
+                "date": "2020-10-10",
+                "message": "hey number 2",
+                "messageBy": "client"
+            }
+        ]
     },
     {
         "id": 3,
