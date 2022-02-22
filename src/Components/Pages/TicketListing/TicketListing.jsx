@@ -4,6 +4,7 @@ import BreadCrumbPage from "../../Layout/BreadCrumb/BreadCrumb"
 import TicketTable from '../../Layout/TicketTable/TicketTable'
 import ticketData from "../../../assets/data/dummy-tickets.json"
 import SearchBar from '../../Layout/SearchBar/SearchBar'
+import {useNavigate} from "react-router-dom"
 
 function TicketListing() {
   const [displayTicket,setDispalyTicket] = useState(ticketData)
@@ -21,12 +22,18 @@ function TicketListing() {
     const dispTicket = ticketData.filter(tickets => tickets.subject.toLowerCase().includes(searchResultStr.toLowerCase()))
     setDispalyTicket(dispTicket)
   }
+
+  const navigate = useNavigate()
+  const handleNavigate = () => {
+    navigate("/newticket")
+  }
+
   return (
     <div className='ticket-lsiting-div'>
       <BreadCrumbPage page="Ticket List"/>
       <div className="ticket-lsiting-div-main">
         <div className="ticket-lsiting-div-search">
-         <button className="ticket-lsiting-div-button">
+         <button className="ticket-lsiting-div-button" onClick={handleNavigate}>
            Add New Ticket
          </button>
          <SearchBar 

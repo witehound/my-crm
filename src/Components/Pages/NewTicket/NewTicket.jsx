@@ -4,6 +4,7 @@ import BreadCrumbPage from "../../Layout/BreadCrumb/BreadCrumb"
 import AddTicketForm from "../NewTicket/AddTicketForm/AddTicketForm"
 
 
+
 const initialFormData = {
   subject: "",
   issueDate: "",
@@ -30,11 +31,12 @@ function NewTicket() {
     console.log("works fine", formData)
   }
 
+
   return (
     <div className='new-ticket-div'>
      <BreadCrumbPage page="New Ticket"/>
-     <div className="new-ticket-div-add">
-       <h5>Add New Ticket</h5>
+     <div className="new-ticket-div-add" >
+       <h5 >Add New Ticket</h5>
        <div className="new-ticket-div-add-main">
          <AddTicketForm
            handleOnChange={handleOnChange}

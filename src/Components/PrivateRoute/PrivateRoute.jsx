@@ -1,16 +1,11 @@
 import React from 'react'
-import { Route } from 'react-router'
+import { Navigate } from 'react-router'
 
-const isAuth = true
-function PrivateRoute ({children},...rest) {
+function PrivateRoute ({children, isAuth}) {
+  const setIsAuth = isAuth
 
   return (
-    <Route
-     render={()=> (
-         isAuth ? {children} : <Route path='/'/>
-     )
-     }
-    />
+    isAuth ? children : <Navigate to ="/"/>
   )
 }
 

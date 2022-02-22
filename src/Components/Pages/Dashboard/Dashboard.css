@@ -34,3 +34,8 @@
 h6{
     font-weight: 100;
 }
+
+.dashboard-div-add-ticket-button:hover{
+    cursor: pointer;
+    background-color: rgb(247, 83, 54);
+}

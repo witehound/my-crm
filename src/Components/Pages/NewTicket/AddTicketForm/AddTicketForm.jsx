@@ -41,7 +41,7 @@ function AddTicketForm({handleOnChange,handelOnSubmitTwo,frmData }) {
       </div>
       <div className="add-ticket-form-div-button">
          <button onClick={handelOnSubmitTwo}
-         className='add-ticket-form-div-btn'>Add New Ticket</button>
+         className='add-ticket-form-div-btn'>Create Ticket</button>
       </div>
       <div className="hr">
         <hr />
