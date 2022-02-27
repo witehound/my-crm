@@ -23,3 +23,10 @@
     height: 50px;
     width: 100vw;
 }
+
+@media only screen  and (max-width: 660px) {
+    .app-layout-main{
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+}

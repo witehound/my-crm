@@ -1,5 +1,5 @@
 .ticket-table-div{
-    height: 360px;
+    height: 400px;
     font-weight: 100;
     overflow: auto;
     position: relative;
@@ -29,3 +29,20 @@ table{
     justify-content: center;
     column-span: all;
 }
+
+@media only screen  and (max-width: 660px) {
+    .ticket-table-div{
+        margin-top: 20px;
+    }
+}
+
+@media only screen  and (min-height: 1020px) {
+    .ticket-table-div{
+        margin-top: 20px;
+        height: 100%;
+        overflow: auto;
+    }
+}
+
+
+

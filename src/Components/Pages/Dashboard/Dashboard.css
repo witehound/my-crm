@@ -5,7 +5,7 @@
 }
 
 .dashboard-div-add-ticket{
-    flex: 1;
+    height: 20%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -38,4 +38,29 @@ h6{
 .dashboard-div-add-ticket-button:hover{
     cursor: pointer;
     background-color: rgb(247, 83, 54);
+}
+
+@media only screen  and (max-width: 660px) {
+    .dashboard-div-add-ticket{
+        height: 20%;
+    }
+}
+
+
+@media only screen  and (min-height: 1180px) {
+    .dashboard-div-add-ticket{
+        height: 13%;
+    }
+}
+
+@media only screen  and (min-height: 1020px) {
+    .dashboard-div-add-ticket{
+        height: 20%;
+    }
+}
+
+@media only screen  and (min-height: 1360px) {
+    .dashboard-div-add-ticket{
+        height: 12%;
+    }
 }
