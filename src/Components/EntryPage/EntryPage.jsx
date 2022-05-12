@@ -1,4 +1,5 @@
 import React, {useState} from 'react'
+import { useNavigate } from 'react-router-dom'
 import './EntryPage.css'
 import LoginForm from '../LoginForm/LoginForm'
 import ForgotPassword from '../ForgotPassword/ForgotPassword'
@@ -8,6 +9,7 @@ function EntryPage() {
   const [email, setEmail] = useState("")
   const [password, setPassword] = useState("")
   const [formload, setFormload] = useState("login")
+  const navigate = useNavigate()
 
   const handleOnChange = e => {
     const {name, value} = e.target
@@ -30,7 +32,7 @@ function EntryPage() {
       alert("fill all the form up!")
     }
     //TODO call api with the form
-    console.log(email, password)
+    navigate('/dashboard')
   }
 
   const handleOnResetSubmit = e => {

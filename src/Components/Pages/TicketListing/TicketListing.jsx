@@ -18,7 +18,7 @@ function TicketListing() {
     searchTicket(value)
   }
 
-  const searchTicket = searchResultStr => {
+  const searchTicket = (searchResultStr) => {
     const dispTicket = ticketData.filter(tickets => tickets.subject.toLowerCase().includes(searchResultStr.toLowerCase()))
     setDispalyTicket(dispTicket)
   }
