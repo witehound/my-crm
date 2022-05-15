@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'
+import { useNavigate } from 'react-router'
 import "./NewTicket.css"
 import BreadCrumbPage from "../../Layout/BreadCrumb/BreadCrumb"
 import AddTicketForm from "../NewTicket/AddTicketForm/AddTicketForm"
@@ -13,6 +14,7 @@ const initialFormData = {
 
 function NewTicket() {
   const [formData,setFormData] = useState(initialFormData)
+  const navigate = useNavigate()
 
   useEffect(() => {},
   [formData]
@@ -28,7 +30,9 @@ function NewTicket() {
 
   const handelOnSubmitTwo = e => {
     e.preventDefault()
-    console.log("works fine", formData)
+    setFormData(formData)
+    navigate("/dashboard")
+    console.log(formData)
   }
 
 
