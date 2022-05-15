@@ -7,19 +7,22 @@ import {useParams} from "react-router-dom"
 
 
 function Tickets() {
- const { tId }  = useParams()
+ const { trackId }  = useParams()
+
+ console.log(trackId)
+ 
  const [ticket, setTicket] = useState("")
  
  const getId = () =>{
    for (let index = 0; index < ticketsData.length; index++){
-     if(tId == ticketsData[index].id){
+     if(trackId == ticketsData[index].id){
        setTicket(ticketsData[index])
      }
    }
  }
 
  useEffect(()=>
- { getId()},[tId])
+ { getId()},[trackId])
    
 
   return (
