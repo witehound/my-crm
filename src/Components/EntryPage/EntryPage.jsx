@@ -23,7 +23,6 @@ function EntryPage() {
       default:
         break;
     }
-    console.log(name, value)
   }
 
   const handleOnSubmit = e => {
