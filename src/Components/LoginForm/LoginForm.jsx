@@ -30,7 +30,7 @@ function LoginForm({
             />
           </div>
           <div className="login-form-pass">
-            <label>Email :</label>
+            <label>Password :</label>
             <input
               type="password"
               name="password"

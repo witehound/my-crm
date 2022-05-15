@@ -4,7 +4,6 @@ import './EntryPage.css'
 import LoginForm from '../LoginForm/LoginForm'
 import ForgotPassword from '../ForgotPassword/ForgotPassword'
 
-
 function EntryPage() {
   const [email, setEmail] = useState("")
   const [password, setPassword] = useState("")
@@ -24,6 +23,8 @@ function EntryPage() {
         break;
     }
   }
+
+  //added an advanced value setter
 
   const handleOnSubmit = e => {
     e.preventDefault()
