@@ -9,7 +9,7 @@ import {BrowserRouter as Router, Routes, Route} from "react-router-dom"
 import PrivateRoute from './Components/PrivateRoute/PrivateRoute';
 
 
-
+// NEW
 
 function App() {
   const isAuth = true
